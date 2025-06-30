@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            color: blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title" id="heading1">Heading 1</h1>
+    <h1 class="title" id="heading2">Heading 2</h1>
+    <h1 class="title" id="heading3">Heading 3</h1>
+    <h1>Heading 4</h1>
+
+    <script src="/Practice/DOM.js">
+
+    </script>
+    <script>
+        let subHeading;
+        for (let i=0; i<9; i++){
+        subHeading = document.createElement('h2');
+        subHeading.textContent = 'Amapiano';
+        subHeading.className = "Sub-heading1";
+        subHeading.style.fontFamily = 'Verdana'
+        subHeading.style.color = 'yellow';
+        
+        document.body.appendChild(subHeading);
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="form1">
+        <label for="UserName">Enter UserName</label>
+        <input type="text" name="UserName" id="UserName">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">login</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('form1');
+        // let username = form.userName.value;
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault;
+            const username = document.getElementById('UserName').value;
+            let password = form.password.value;
+            if(username === '' && password === '') { alert("Please fill all the fields")};
+            console.log('logon success')
+        })
+    </script>
+</body>
+
+</html>
